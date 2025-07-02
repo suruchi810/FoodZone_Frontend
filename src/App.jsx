@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import { useEffect, useState } from 'react'
 import { ToastContainer } from 'react-toastify'
-import Navbar from './Components/Navbar'
+import Navbar from './components/Navbar'
 import ExploreMenu from './pages/ExploreMenu'
 import Home from './pages/Home'
 import Footer from './components/Footer'
@@ -10,7 +10,6 @@ import CartPage from './pages/CartPage'
 import CheckoutPage from './components/CheckoutPage'
 import Verify from './pages/Verify'
 import Myorders from './pages/Myorders'
-import Signin from './pages/Signin'
 
 function App() {
   const [showLogin, setShowLogin] = useState("");

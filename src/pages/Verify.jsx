@@ -6,7 +6,7 @@ const Verify = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const success = searchParams.get("success");
     const orderId = searchParams.get("orderId");
-    const url = import.meta.env.VITE_API_URL;
+    const url = import.meta.env.VITE_BASE_URL;
     const navigate = useNavigate();
 
     const verifyPayment = async () => {

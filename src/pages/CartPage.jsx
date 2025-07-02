@@ -6,7 +6,7 @@ import {useNavigate} from 'react-router-dom'
 
 const CartPage = ({ showLogin, setShowLogin }) => {
   const navigate = useNavigate();
-  const VITE_API_URL = import.meta.env.VITE_API_URL;
+  const VITE_API_URL = import.meta.env.VITE_BASE_URL;
   const { food_list, cartItem, addToCart, removeFromCart, subTotal, token } =
     useContext(StoreContext);
 

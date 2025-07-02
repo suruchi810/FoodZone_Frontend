@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const CheckoutPage = () => {
   const navigate = useNavigate();
-  const url = import.meta.env.VITE_API_URL;
+  const url = import.meta.env.VITE_BASE_URL;
   const { cartItem, food_list, subTotal, token } = useContext(StoreContext);
   const itemsInCart = food_list.filter((f) => cartItem[f._id] > 0);
 

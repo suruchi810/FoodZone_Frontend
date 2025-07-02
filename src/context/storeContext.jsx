@@ -3,7 +3,7 @@ export const StoreContext = createContext(null);
 import axios from 'axios';
 
 const StoreContextProvider = (props) => {
-    const VITE_API_URL = import.meta.env.VITE_API_URL;
+    const VITE_API_URL = import.meta.env.VITE_BASE_URL;
 
     const [cartItem, setCartItem] = useState({});
     const [token, setToken] = useState("");

@@ -22,7 +22,7 @@ const StatusPill = ({ status }) => {
 };
 
 const Myorders = () => {
-  const url = import.meta.env.VITE_API_URL;
+  const url = import.meta.env.VITE_BASE_URL;
   const { token } = useContext(StoreContext);
   const [orders, setOrders] = useState([]);
 

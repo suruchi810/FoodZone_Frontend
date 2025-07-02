@@ -7,7 +7,7 @@ import { StoreContext } from '../context/storeContext'
 const FoodItem = ({ id, name, description, price, image }) => {
   const { cartItem, addToCart, removeFromCart } = useContext(StoreContext);
   
-  const VITE_API_URL = import.meta.env.VITE_API_URL;
+  const VITE_API_URL = import.meta.env.VITE_BASE_URL;
   return (
     <div className="flex flex-col gap-4 shadow-md p-2 rounded-2xl transition transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg">
       <img
